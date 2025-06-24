@@ -53,5 +53,18 @@ Built with Dart (compiled to JavaScript), plain HTML and CSS.
 
 5. **Open your browser at http://localhost:8080**
 
+## Running Tests
+This project includes two basic unit tests for the parsing logic.
+
+1. Make sure you are in the project root (where `pubspec.yaml file lives)
+   
+2. Fetch dev dependencies:
+   ```bash
+   dart pub get
+
+3. Run the Tests:
+   ```bash
+   dart test
+
 
 > **See [DOCUMENTATION.md](DOCUMENTATION.md) for in‐depth implementation notes and challenges.**
