@@ -26,6 +26,9 @@
 5. **Easy Local & Hosted Deployment**  
    - Built with Dart (compiled to JavaScript), plain HTML and CSS. 
    - Out-of-the-box support for GitHub Pages via `/docs` folder.
+  
+6. **Unit Tests**
+   - Two basic Dart tests validate `analyzePreamble()` for simple sentences and punctuation/casing.
 
 ---
 
@@ -69,5 +72,8 @@
 
 - **`web/style.css`**  
   Defines the full-screen background reset, frosted-glass card, button styles, and responsive layout.
+
+- **`test/preamble_parser_test.dart`**
+  verifies counts on "To be or not to be", verifies counts on "The, the. THE!"
 
 ---
