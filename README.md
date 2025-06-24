@@ -29,24 +29,14 @@ Built with Dart (compiled to JavaScript), plain HTML and CSS.
 
 ---
 
-## Getting Started
+## Getting Started (How to Run the App)
 
 1. **Clone the repo**  
    ```bash
    git clone https://github.com/<your-username>/Code-Test.git
    cd Code-Test
-   
-2. **Fetch Dart packages**
 
-   ```bash
-   dart pub get
-
-3. **Compile Dart to JavaScript**
-   ```bash
-   cd docs 
-   dart compile js -O2 -o main.dart.js main.dart
-
-4. **Serve the docs/ folder**:
+2. **Serve the `docs/` folder**:
    - **VS Code Live Server** (no extra SDKs):
      1. Install the “Live Server” extension.  
      2. Open the `docs/` folder in VS Code.  
@@ -67,7 +57,22 @@ Built with Dart (compiled to JavaScript), plain HTML and CSS.
      ```  
    
 
-5. **Open your browser at http://localhost:8080**
+3. **Open your browser at http://localhost:8080**
+
+## Contributing/Development
+If you want to edit the Dart code:
+   
+1. **Fetch Dart packages**
+
+   ```bash
+   dart pub get
+
+2. **Compile Dart to JavaScript**
+   ```bash
+   cd docs 
+   dart compile js -O2 -o main.dart.js main.dart
+
+3. Serve & Test (See "How to run the app" above)
 
 ## Running Tests
 This project includes two basic unit tests for the parsing logic.
