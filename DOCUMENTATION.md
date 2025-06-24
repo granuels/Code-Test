@@ -41,7 +41,7 @@
 
 ### 3. Automated Rebuilds During Development
 - **Problem**: Every Dart change required a manual dart compile js … before testing in the browser.
-- **Solution**: We set up webdev serve (or a file-watcher script) to rebuild on save, so we could iterate UI tweaks in real time.
+- **Solution**: I set up webdev serve to rebuild on save, so I could iterate UI tweaks in real time.
 
 ### 3. Folder Layout vs. GitHub Pages  
 - **Problem:** GitHub Pages do not serve from a `web/` folder by default.  
