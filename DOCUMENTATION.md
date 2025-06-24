@@ -74,6 +74,6 @@
   Defines the full-screen background reset, frosted-glass card, button styles, and responsive layout.
 
 - **`test/preamble_parser_test.dart`**
-  verifies counts on "To be or not to be", verifies counts on "The, the. THE!"
+  2 unit test cases that verify counts on "To be or not to be" and also verifies count on "The, the. THE!"
 
 ---
