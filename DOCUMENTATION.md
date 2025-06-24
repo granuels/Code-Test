@@ -2,7 +2,7 @@
 
 *Live Demo:* https://granuels.github.io/Code-Test/
 
-## Features
+## Features 
 
 1. **Static Preamble Display**  
    - The U.S. Constitution’s Preamble is hard-coded into a `<textarea>`, and auto-resized to show all lines without manual scroll.
