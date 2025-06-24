@@ -33,39 +33,20 @@ Built with Dart + plain HTML/CSS (no Flutter).
    ```bash
    git clone https://github.com/<your-username>/Code-Test.git
    cd Code-Test
-Fetch Dart packages
+   
+2. **Fetch Dart packages**
 
-bash
-Copy
-Edit
+```bash
 dart pub get
-Compile Dart to JavaScript
 
-bash
-Copy
-Edit
-dart compile js -O2 -o web/main.dart.js web/main.dart
-Serve the web/ folder
+3. **Compile Dart to JavaScript**
+```bash
+cd docs 
+dart compile js -O2 -o main.dart.js main.dart
 
-VS Code Live Server
-
-Install the “Live Server” extension
-
-Right-click web/index.html → Open with Live Server
-
-Node.js
-
-bash
-Copy
-Edit
+4. **Serve the docs/ folder**:
+```bash
 npm install -g http-server
-cd web
 http-server -c-1
-Python
 
-bash
-Copy
-Edit
-cd web
-python -m http.server 8080
-Open your browser at http://localhost:8080
+5. **Open your browser at http://localhost:8080**
