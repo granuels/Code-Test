@@ -36,17 +36,17 @@ Built with Dart + plain HTML/CSS (no Flutter).
    
 2. **Fetch Dart packages**
 
-```bash
-dart pub get
+   ```bash
+   dart pub get
 
 3. **Compile Dart to JavaScript**
-```bash
-cd docs 
-dart compile js -O2 -o main.dart.js main.dart
+   ```bash
+   cd docs 
+   dart compile js -O2 -o main.dart.js main.dart
 
 4. **Serve the docs/ folder**:
-```bash
-npm install -g http-server
-http-server -c-1
+   ```bash
+   npm install -g http-server
+   http-server -c-1
 
 5. **Open your browser at http://localhost:8080**
