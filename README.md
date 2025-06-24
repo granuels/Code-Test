@@ -47,9 +47,25 @@ Built with Dart (compiled to JavaScript), plain HTML and CSS.
    dart compile js -O2 -o main.dart.js main.dart
 
 4. **Serve the docs/ folder**:
-   ```bash
-   npm install -g http-server
-   http-server -c-1
+   - **VS Code Live Server** (no extra SDKs):
+     1. Install the “Live Server” extension.  
+     2. Open the `docs/` folder in VS Code.  
+     3. Right-click `index.html` → **Open with Live Server**.  
+
+   - **Node.js** (if installed):
+     ```bash
+     npm install -g http-server
+     cd docs
+     http-server -c-1
+     ```  
+   - **Python** (if you have Python but not Node):
+     ```bash
+     cd docs
+     python -m http.server 8080
+     # or on Windows:
+     py -3 -m http.server 8080
+     ```  
+   
 
 5. **Open your browser at http://localhost:8080**
 
