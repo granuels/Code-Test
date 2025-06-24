@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Preamble Parser</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* once the box grows past 300px, show a scrollbar */
+    .card textarea {
+      max-height: 300px;    /* adjust as needed */
+      overflow-y: auto;
+    }
+  </style>
+</head>
+<body>
+   <!-- blurred background image -->
+  <div class="background"></div>
+
+  <!-- central card container -->
+  <div class="card">
+    <h1>Preamble Parser</h1>
+    
+
+    <!-- input area ( grows with text ) -->
+    <textarea
+      id="preamble"
+      oninput="enforceWordLimit(this); autoGrow(this)"
+    >We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defence, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America.</textarea>
+
+    <!-- action buttons -->
+    <div class="controls">
+      <button id="analyzeBtn">Parse</button>
+      <button id="resetBtn" class="reset">Reset</button>
+    </div>
+
+    <!-- results display -->
+    <div class="results">
+      <div class="metric">
+        <div class="circle"><span id="tCount">0</span></div>
+        <div class="label">Begin with “t”</div>
+      </div>
+      <div class="metric">
+        <div class="circle"><span id="eCount">0</span></div>
+        <div class="label">End with “e”</div>
+      </div>
+      <div class="metric">
+        <div class="circle"><span id="bothCount">0</span></div>
+        <div class="label">Both</div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- compiled dart application -->
+  <script defer src="main.dart.js"></script>
+  <script>
+    const MAX_WORDS = 200;
+
+    // trim input to the first MAX_WORDS words
+    function enforceWordLimit(el) {
+      const words = el.value.trim().split(/\s+/);
+      if (words.length > MAX_WORDS) {
+        el.value = words.slice(0, MAX_WORDS).join(' ');
+      }
+    }
+    
+    //Resize textarea height to fit its content
+    function autoGrow(el) {
+      el.style.height = 'auto';
+      el.style.height = el.scrollHeight + 'px';
+    }
+    
+    //on page load, enforce limit and size correctly
+    window.addEventListener('DOMContentLoaded', () => {
+      const ta = document.getElementById('preamble');
+      enforceWordLimit(ta);
+      autoGrow(ta);
+    });
+  </script>
+</body>
+</html>
