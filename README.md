@@ -56,7 +56,7 @@ Built with Dart (compiled to JavaScript), plain HTML and CSS.
 ## Running Tests
 This project includes two basic unit tests for the parsing logic.
 
-1. Make sure you are in the project root (where `pubspec.yaml file lives)
+1. Make sure you are in the project root (where `pubspec.yaml` file lives)
    
 2. Fetch dev dependencies:
    ```bash
