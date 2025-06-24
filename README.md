@@ -8,7 +8,7 @@ A simple web app that counts how many words in the U.S. Constitution’s Preambl
 - end with **e**  
 - both start with **t** and end with **e**
 
-Built with Dart + plain HTML/CSS.
+Built with Dart (compiled to JavaScript), plain HTML and CSS.
 
 ---
 
