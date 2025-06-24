@@ -6,6 +6,7 @@
 
 1. **Static Preamble Display**  
    - The U.S. Constitution’s Preamble is hard-coded into a `<textarea>`, and auto-resized to show all lines without manual scroll.
+   - **Page Reload**: any page refresh will restore the original Preamble text (base case) before parsing.
 
 2. **Three-Criteria Word Counts**  
    - **Begin with ‘t’**  
