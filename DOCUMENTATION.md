@@ -73,7 +73,7 @@
 - **`web/style.css`**  
   Defines the full-screen background reset, frosted-glass card, button styles, and responsive layout.
 
-- **`test/preamble_parser_test.dart`**
+- **`test/preamble_parser_test.dart`**  
   2 unit test cases that verify counts on "To be or not to be" and also verifies count on "The, the. THE!"
 
 ---
