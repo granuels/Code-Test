@@ -52,3 +52,6 @@ Built with Dart (compiled to JavaScript), plain HTML and CSS.
    http-server -c-1
 
 5. **Open your browser at http://localhost:8080**
+
+
+> **See [DOCUMENTATION.md](DOCUMENTATION.md) for in‐depth implementation notes and challenges.**
